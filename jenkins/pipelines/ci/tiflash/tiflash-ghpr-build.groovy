@@ -21,7 +21,7 @@ def need_tests() {
 }
 
 def disable_lint_or_format() {
-        for (i in ['release-4.0', 'release-5.0', 'release-5.1', 'release-5.2']) {
+        for (i in ['release-4.0', 'release-5.0', 'release-5.1', 'release-5.2', 'release-5.3']) {
                 if (ghprbTargetBranch.contains(i)) {
                         return true
                 }
